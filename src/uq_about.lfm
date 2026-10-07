@@ -1,0 +1,9 @@
+object FormAbout: TFormAbout
+  Left = 535
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'FormAbout'
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+end

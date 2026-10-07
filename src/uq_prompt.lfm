@@ -1,0 +1,211 @@
+object FrmPrompting: TFrmPrompting
+  Left = 400
+  Height = 649
+  Top = 250
+  Width = 318
+  BorderStyle = bsNone
+  Caption = 'FrmPrompting'
+  ClientHeight = 649
+  ClientWidth = 318
+  Color = 16252407
+  Font.Height = -14
+  Font.Name = 'Noto Sans'
+  Position = poMainFormCenter
+  LCLVersion = '4.4.0.0'
+  OnShow = FormShow
+  object rgPersona: TRadioGroup
+    Left = 30
+    Height = 258
+    Top = 408
+    Width = 338
+    Align = alClient
+    AutoFill = True
+    BorderSpacing.Around = 24
+    Caption = 'Pilih Persona Penulis'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 226
+    ClientWidth = 334
+    ItemIndex = 0
+    Items.Strings = (
+      'Sang Ulama / Akademisi'
+      'Sang Penyejuk Hati '
+      'Intelektual Muda / Modernis'
+      'Motivator Islami'
+      'Sahabat Seperjuangan'
+      'Aktivis Dakwah Sosial'
+      'Praktisi Parenting '
+      'Pencerita '
+    )
+    ParentBackground = False
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 20
+    Height = 95
+    Top = 557
+    Width = 358
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 4
+    BorderSpacing.Around = 16
+    Caption = 'Tambahan ( opsional )'
+    ClientHeight = 63
+    ClientWidth = 354
+    ParentBackground = False
+    TabOrder = 1
+    object mTambahan: TMemo
+      Left = 6
+      Height = 0
+      Top = 2
+      Width = 342
+      Align = alClient
+      BorderSpacing.Around = 5
+      TabOrder = 0
+    end
+    object spBuatArtikel: TSpeedButton
+      Cursor = crHandPoint
+      Left = 10
+      Height = 38
+      Top = 5
+      Width = 334
+      Align = alBottom
+      Anchors = []
+      BorderSpacing.Around = 8
+      Caption = 'Buat Artikel'
+      Flat = True
+      OnClick = spBuatArtikelClick
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 30
+    Height = 70
+    Top = 146
+    Width = 338
+    Align = alTop
+    BorderSpacing.Around = 24
+    Caption = '(1) Penerjemahan'
+    ClientHeight = 38
+    ClientWidth = 334
+    ParentBackground = False
+    TabOrder = 2
+    object spTranslate: TSpeedButton
+      Cursor = crHandPoint
+      Left = 19
+      Height = 34
+      Top = 15
+      Width = 296
+      Align = alClient
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 10
+      BorderSpacing.Around = 6
+      Caption = 'Translate'
+      Flat = True
+      OnClick = spTranslateClick
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 30
+    Height = 77
+    Top = 282
+    Width = 338
+    Align = alTop
+    BorderSpacing.Left = 24
+    BorderSpacing.Right = 24
+    Caption = '(2) Buat Tulisan'
+    ClientHeight = 45
+    ClientWidth = 334
+    ParentBackground = False
+    TabOrder = 3
+    object cbGaya: TComboBox
+      Left = 19
+      Height = 35
+      Top = 7
+      Width = 296
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Right = 10
+      BorderSpacing.Around = 6
+      ItemHeight = 27
+      ItemIndex = 0
+      Items.Strings = (
+        'Materi Dakwah'
+        'Transkrip Video'
+        'Arikel Blog'
+        'Pesan Whatsapp'
+      )
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Materi Dakwah'
+    end
+  end
+  object ShapeLine1: TShapeLine
+    Left = 20
+    Height = 14
+    Top = 264
+    Width = 358
+    Align = alTop
+    BorderSpacing.Left = 16
+    BorderSpacing.Right = 16
+    LineColor = 13158600
+    ArrowColor = clBlack
+    LineWidth = 1
+  end
+  object plColorPanel1: TplColorPanel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 398
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 0
+    Color = 15004385
+    Caption = 'Artificial Intelligence'
+    Font.Height = -14
+    Font.Name = 'Noto Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    Align = alTop
+    TabOrder = 4
+    UseDockManager = True
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 27
+    Top = 47
+    Width = 334
+    Align = alTop
+    BorderSpacing.Left = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.Around = 6
+    Caption = 'Bahasa Tujuan'
+  end
+  object cbLanguage: TComboBox
+    Left = 32
+    Height = 35
+    Top = 81
+    Width = 334
+    Align = alTop
+    BorderSpacing.Left = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.Around = 6
+    ItemHeight = 27
+    ItemIndex = 0
+    Items.Strings = (
+      'Bahasa Indonesia'
+      'Bahasa Inggris'
+      'Bahasa Jepang'
+      'Bahasa China'
+      'Bahasa Korea'
+    )
+    Style = csDropDownList
+    TabOrder = 5
+    Text = 'Bahasa Indonesia'
+  end
+end

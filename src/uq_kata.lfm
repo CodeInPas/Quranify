@@ -1,0 +1,532 @@
+object FrmKata: TFrmKata
+  Left = 400
+  Height = 664
+  Top = 250
+  Width = 276
+  Align = alClient
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsNone
+  Caption = 'Penjabaran Per Kata'
+  ClientHeight = 664
+  ClientWidth = 276
+  Color = 11439110
+  Font.Name = 'Noto Sans'
+  Position = poMainFormCenter
+  LCLVersion = '4.4.0.0'
+  OnShow = FormShow
+  object Panel1: TPanel
+    Left = 2
+    Height = 660
+    Top = 2
+    Width = 272
+    Align = alClient
+    BorderSpacing.Around = 2
+    BevelOuter = bvNone
+    ClientHeight = 660
+    ClientWidth = 272
+    Color = clWhite
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object GDaftarKataBybasic: TRxDBGrid
+      Cursor = crHandPoint
+      Left = 4
+      Height = 239
+      Top = 417
+      Width = 264
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Font.Height = -16
+          Font.Name = 'Noto Sans'
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'indonesia'
+          Width = 132
+          FieldName = 'indonesia'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+          WordWrap = True
+        end      
+        item
+          Alignment = taRightJustify
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'arab_harokat'
+          Width = 132
+          FieldName = 'arab_harokat'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      SelectedFont.Color = 5986509
+      SelectedFont.Height = -19
+      SelectedFont.Name = 'Amiri'
+      SelectedFont.Style = [fsBold]
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alClient
+      AlternateColor = 15923188
+      AutoFillColumns = True
+      BorderSpacing.Around = 4
+      BorderStyle = bsNone
+      Color = 16054768
+      DrawFullLine = False
+      SelectedColor = 15198684
+      DataSource = DSAyatByBasic
+      FixedCols = 0
+      Font.Height = -18
+      Font.Name = 'Amiri'
+      Options = [dgColumnResize, dgColumnMove, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisplayMemoText]
+      ParentFont = False
+      ReadOnly = True
+      Scrollbars = ssNone
+      TabOrder = 0
+      OnDblClick = GDaftarKataBybasicDblClick
+    end
+    object GDaftarKataByID: TRxDBGrid
+      Cursor = crHandPoint
+      Left = 4
+      Height = 305
+      Top = 31
+      Width = 264
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Font.Height = -16
+          Font.Name = 'Noto Sans'
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'indonesia'
+          Width = 132
+          FieldName = 'indonesia'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+          WordWrap = True
+        end      
+        item
+          Alignment = taRightJustify
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'utsmani'
+          Width = 132
+          FieldName = 'utsmani'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      SelectedFont.Color = 274158
+      SelectedFont.Height = -19
+      SelectedFont.Name = 'Amiri'
+      SelectedFont.Style = [fsBold]
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter, rdgWordWrap]
+      Align = alTop
+      AlternateColor = 15857135
+      AutoFillColumns = True
+      BorderSpacing.Around = 4
+      BorderStyle = bsNone
+      Color = 15333368
+      DrawFullLine = False
+      SelectedColor = 15727853
+      GridLineColor = 14872305
+      DataSource = DSDaftarKataByID
+      DefaultRowHeight = 52
+      FixedCols = 0
+      Font.Height = -18
+      Font.Name = 'Amiri'
+      Options = [dgColumnResize, dgColumnMove, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisplayMemoText]
+      ParentFont = False
+      ReadOnly = True
+      Scrollbars = ssNone
+      TabOrder = 1
+      OnCellClick = GDaftarKataByIDCellClick
+    end
+    object Label1: TLabel
+      Left = 4
+      Height = 22
+      Top = 391
+      Width = 264
+      Align = alTop
+      Alignment = taCenter
+      BorderSpacing.Around = 4
+      Caption = 'Variasi dari Kata ini'
+      Font.Height = -14
+      Font.Name = 'Noto Sans'
+      ParentFont = False
+    end
+    object Panel2: TPanel
+      Left = 4
+      Height = 47
+      Top = 340
+      Width = 264
+      Align = alTop
+      BorderSpacing.Around = 4
+      BevelOuter = bvNone
+      ClientHeight = 47
+      ClientWidth = 264
+      Color = 16252412
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+      object spGoAnalis: TSpeedButton
+        Cursor = crHandPoint
+        Left = 0
+        Height = 47
+        Top = 0
+        Width = 264
+        Align = alClient
+        Caption = 'Analisis Kata'
+        Flat = True
+        Font.Height = -14
+        Font.Name = 'Noto Sans'
+        Glyph.Data = {
+          36100000424D3610000000000000360000002800000020000000200000000100
+          2000000000000010000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000007429047B752A05FF752A
+          05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A
+          05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A05DA000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000007928001374290444752A
+          0599792D0BFF772C0AFF752B08F8752B047E7429044474290444742904447429
+          044474290444742904447429044474290444742904447429062C000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000000000000000752A
+          047487371EFFE75D5CFF9F3F29FF752B06FF783012B57627000D000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000000000000000752A
+          047487371EFFF76468FFF76468FFAB5F70FF6E361FFF732C0C90000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000000000000000752A
+          047487371EFFDC6979FF5C7FC6FF028EFCFF276EADFF732C0AFE722807260000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000007429
+          057073351FFE0B8DF6FF018FFDFF018FFDFF018FFDFF594545FF733216C10000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000000000000000762E
+          091C732E0DFC2D6AA1FF018FFDFF018FFDFF018FFDFF157ED3FF742B09FF752B
+          044800000000000000000000000000000000000000000000000000000000802B
+          0006752B043B752A0655752A0655752A0655752A0655752A0655752A0655752A
+          0655752A0655752A0655752A0655752A0655752A0655752A0655752A0655752A
+          0655742C07BB6C351DFF078AF0FF018FFDFF018FFDFF018FFDFF46546BFF7132
+          16E6663300050000000000000000000000000000000000000000772B091E7132
+          0EDF732C07FE6E330EFE6E330EFE6E330EFE6E330EFE6E330EFE6E330EFE6E33
+          0EFE6E330EFE6E330EFE6E330EFE6E330EFE6E330EFE6E330EFE6E330EFE6E33
+          0EFE6E330EFE732D0AFF3F5A7AFF018FFDFF018FFDFF018FFDFF0A87E9FF6F31
+          15FF7529056F000000000000000000000000000000000000000071320CBC5B4D
+          28FF0EAE87FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF2C8661FF732D0CFF1283DCFF0F99FDFF1DA5FDFF24A9FDFF4A74
+          91FF742E0EF77326001400000000000000000000000000000000732E09F9278D
+          67FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF08B892FF21C29BFF684E2FFF695B53FF50CBFDFF50CBFDFF50CBFDFF50C8
+          F8FF70412CFE752E0C9B00000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF09B992FF29C7
+          A0FF4BD6AEFF52D9B1FF58B790FF752B07FF5A9FB9FF50CBFDFF50CBFDFF50CB
+          FDFF5AA0BBFF752B07FE742C062E000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF06B791FF06B791FF06B791FF1BC09AFF49D5ADFF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF696D49FF71432DFF51C9F9FF50CBFDFF50CB
+          FDFF50CBFDFF6C584EFF753013C9000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF06B791FF07B891FF2FC9A2FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF55CAA2FF743312FF5F8897FF50CBFDFF50CB
+          FDFF50CBFDFF56B4DAFF742D0BFE762C06520000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF06B7
+          91FF06B791FF06B791FF08B892FF3BCEA8FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF628862FF743417FF53BFEAFF50CB
+          FDFF50CBFDFF50CBFDFF647275FF753111EA8020000800000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF9DE3D4FF3EC7AAFF06B7
+          91FF06B791FF07B792FF3CCFA8FF91E7CDFFA3EBD6FF52D9B1FF52D9B1FF88E5
+          C9FFA7ECD7FF52D9B1FF52D9B1FF52D9B1FF53D5ADFF724222FF657071FF50CB
+          FDFF50CBFDFF50CBFDFF52C3F0FF74351AFD772A067A00000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FFADE7DBFFC7EFE6FF7AD9
+          C4FF7AD9C4FF92E3CEFFA3EBD5FFE9FAF5FFA8ECD8FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF5DA47DFF752C09FF56AF
+          D2FF50CBFDFF59C3FDFF829AFDFF8E5D9BFF752B09F776270A1A752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF4ECCB1FFFFFFFFFFD7F3
+          EDFFD2F3EBFFDCF7EFFFE9FAF5FFFEFFFEFF68DEBBFF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF6C5938FF6D53
+          49FE76A6FDFF9C81FDFFA07DFDFFA07CFBFF7D382FF9772C0898752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF09B892FFE3F7F2FF74D7
+          C2FF4BD6AEFF52D9B1FFBAF0E0FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF752A
+          05FF9364B3FFA07DFDFFA07DFDFFA07DFDFF905EA1FF762C0CEE752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF8ADDCBFFDAF5
+          EFFF52D9B1FF57DAB3FFF4FDFAFF91E7CDFF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF752A
+          05FF7A3423F99F7BF7FFA07DFDFFA07DFDFF905D9EFF762C0DED752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF2FC3A3FFFEFF
+          FFFF73E0C0FF8FE6CDFFF7FDFBFF5ADBB5FF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF752E
+          0AEC762C0BEB844657FC9970D5FF9567BCFF79311CF9762A078D752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF27C69FFFD7F6
+          EDFFB5EFDEFFD1F5EAFFBBF0E0FF52D9B1FF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1772B052F762E0DD9752A05FF752B07FC752C0BA16D240007752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF06B791FF42D2AAFF94E8
+          CFFFF5FDFBFFFEFFFEFF7BE2C3FF52D9B1FF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D9FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE10000000000000001702900197722000F0000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF0CB993FF51D8B1FF5ADB
+          B5FFF7FDFBFFE6F9F4FF53D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FFAAEC
+          D8FFD2F5EBFF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1000000000000000000000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF1CC19BFF52D9B1FF52D9
+          B1FF81E3C6FF75E1C1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF6ADE
+          BCFF7CE2C4FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1000000000000000000000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF29C6A0FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1000000000000000000000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF32CBA3FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1000000000000000000000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF36CDA5FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE1000000000000000000000000000000000000000000000000752A05FF2293
+          6DFF06B791FF06B791FF06B791FF06B791FF06B791FF36CCA5FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF60926CFF7531
+          0BE100000000000000000000000000000000000000000000000071320DF0327F
+          5AFF06B791FF06B791FF06B791FF06B791FF06B791FF30C9A2FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9
+          B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF52D9B1FF657A54FF7330
+          0CC3000000000000000000000000000000000000000000000000732C08856E35
+          11FD327F5AFF23916BFF23916BFF23916BFF23916BFF3D9D76FF5BAA83FF5BAA
+          83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF5BAA
+          83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF5BAA83FF628962FF732E08FC762A
+          065B00000000000000000000000000000000000000000000000066330005732C
+          088571320DF0752A05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A
+          05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A05FF752A
+          05FF752A05FF752A05FF752A05FF752A05FF752A05FE74300AE3752905690000
+          0000000000000000000000000000000000000000000000000000
+        }
+        ParentFont = False
+        OnClick = spGoAnalisClick
+      end
+    end
+    object pnJudulTafsir5: TJvNavPanelHeader
+      Left = 0
+      Top = 0
+      Width = 272
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'Penjabaran perkata'
+      Font.Color = clBlack
+      Font.Height = -14
+      Font.Name = 'Noto Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ColorFrom = 15789017
+      ColorTo = 15922406
+      ImageIndex = 0
+    end
+  end
+  object DTDaftarKataByID: TZQuery
+    AfterOpen = DTDaftarKataByIDAfterOpen
+    Connection = MainForm.Koneksi
+    SQL.Strings = (
+      'select * from terjemah_kata where id_ayat= :ids'
+    )
+    Params = <    
+      item
+        Name = 'ids'
+      end>
+    Left = 64
+    Top = 96
+    ParamData = <    
+      item
+        Name = 'ids'
+      end>
+  end
+  object DSDaftarKataByID: TDataSource
+    DataSet = DTDaftarKataByID
+    Left = 166
+    Top = 160
+  end
+  object DTDaftarAyatByBasic: TZQuery
+    Connection = MainForm.Koneksi
+    Params = <>
+    Left = 371
+    Top = 243
+  end
+  object DSDaftarAyatByBasic: TDataSource
+    DataSet = DTDaftarAyatByBasic
+    Left = 384
+    Top = 307
+  end
+  object DTAyatByBasic: TZQuery
+    Connection = MainForm.Koneksi
+    SQL.Strings = (
+      'select distinct arab_harokat, indonesia from terjemah_kata where basic= :basic'
+    )
+    Params = <    
+      item
+        Name = 'basic'
+      end>
+    Left = 58
+    Top = 243
+    ParamData = <    
+      item
+        Name = 'basic'
+      end>
+  end
+  object DSAyatByBasic: TDataSource
+    DataSet = DTAyatByBasic
+    Left = 186
+    Top = 275
+  end
+end

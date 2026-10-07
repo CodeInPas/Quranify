@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Quranify.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="quranify"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="5"/>
+        <CursorPos Y="29"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="2048"/>
+        <CursorPos X="18" Y="52"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_surat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSurat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="51"/>
+        <CursorPos X="32" Y="74"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_tema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTema"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="49"/>
+        <CursorPos X="42" Y="62"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_splash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSplash"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="34"/>
+        <CursorPos X="12" Y="59"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udr_waiting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="35"/>
+        <CursorPos X="3" Y="51"/>
+        <UsageCount Value="178"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_quiz.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmQuiz"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="501"/>
+        <CursorPos X="15" Y="189"/>
+        <UsageCount Value="132"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_prompt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrompting"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="6" Y="57"/>
+        <UsageCount Value="131"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_kata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmKata"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="107"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="117"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="11" Y="17"/>
+        <UsageCount Value="69"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uq_about.pas"/>
+        <ComponentName Value="FormAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="198"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\060099082\AppData\Local\lazarus\onlinepackagemanager\packages\WebView4Delphi\source\uWVBrowser.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="26">
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="459" TopLine="452"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="352" Column="3" TopLine="339"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1962" Column="28" TopLine="1950"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1936" Column="23" TopLine="1924"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1960" Column="15" TopLine="1950"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="353" Column="29" TopLine="340"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="919" Column="3" TopLine="915"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="924" Column="67" TopLine="903"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="907" Column="5" TopLine="903"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2220" Column="27" TopLine="2205"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2220" Column="7" TopLine="2208"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2191" Column="27" TopLine="2174"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2179" Column="23" TopLine="2177"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="910" TopLine="902"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2188" TopLine="2171"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="920" Column="3" TopLine="915"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1426" Column="5" TopLine="1416"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="927" Column="10" TopLine="916"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="929" Column="4" TopLine="912"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1428" Column="3" TopLine="1418"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="2128" Column="17" TopLine="2097"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_surat.pas"/>
+        <Caret Line="69" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1427" TopLine="1418"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="909" Column="38" TopLine="899"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="1419" TopLine="1418"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="910" Column="42" TopLine="890"/>
+      </Position>
+      <Position>
+        <Filename Value="uq_main.pas"/>
+        <Caret Line="917" Column="2" TopLine="915"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
