@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Display</title>
+  
+
+  
+  <style>
+    body {
+      background: #F7FFF7;
+      color: #333;
+      font-family: 'Noto Sans', sans-serif;
+      margin: 0;
+      padding: 1rem;
+      max-width: 100%;	
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .quran-container {
+      background: #FDFFF7;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      max-width: 100%;
+	  line-height:2.5;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+	.tafsir-container {
+      background: #F7FCF7;
+      border-radius: 1px;
+      margin-bottom: 2rem;
+      max-width: 100%;
+      padding: 2rem;
+	  font-family: Google Sans;
+	  font-size:16px;
+      text-align: justify;
+	 box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+
+    .ayah {
+      font-family: 'Amiri', serif;
+      font-size: 1.8rem;
+      line-height: 2.5;
+      direction: rtl;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .translation {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6rem;
+	  font-family: Google Sans;
+	  font-size:18px;
+      color: #555;
+      margin-bottom: 1.2rem;
+    }
+
+    .ayah-number {
+      display: inline-block;
+      background: #dff0ea;
+      color: #000;
+      width: 200px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 1.0rem;
+      margin-bottom: 1rem;
+	  border-radius: 3px;
+    }
+
+    /* ── Button group ── */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px;
+      margin-top: 1rem;
+	  
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border: none;
+      border-radius: 1px;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(0.94);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    /* Individual button colours — all soft / muted */
+    .btn-tafsir-singkat {
+      background: #dff0ea;
+      color: #2e7d5e;
+	  width:50px;
+	  text-align:center;
+    }
+
+    .btn-tafsir-luas {
+      background: #ddeeff;
+      color: #2358a0;
+	  width:50px;
+
+    }
+
+    .btn-audio {
+      background: #fff0d9;
+      color: #a05c00;
+	  width:50px;
+    }
+
+    .btn-corpus {
+      background: #ede8ff;
+      color: #5b3fa8;
+	  width:50px;
+    }
+
+    .btn-morfologi {
+      background: #fde8f0;
+      color: #a03060;
+	  width:50px;
+    }
+
+    /* SVG icon sizing */
+    .btn svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<audio id="quranPlayer" controls style="display:none;"></audio>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const player = document.getElementById('quranPlayer');
+    // Memilih semua span dengan class btn-audio
+    const audioButtons = document.querySelectorAll('.btn-audio');
+
+    audioButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            // Mencegah link pindah halaman
+            e.preventDefault();
+            
+            // Ambil link dari atribut 'data-audio'
+            const audioUrl = this.getAttribute('data-audio');
+            
+            if (audioUrl) {
+                player.src = audioUrl;
+                player.load(); // Memuat ulang source baru
+                player.play().catch(error => {
+                    console.error("Gagal memutar audio:", error);
+                    alert("Gagal memutar audio. Pastikan koneksi internet stabil.");
+                });
+            }
+        });
+    });
+});
+</script>
+
+<body>

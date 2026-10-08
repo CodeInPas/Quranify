@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Ayat Al-Quran</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+		/* === Import Font === */
+		@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+		/* Untuk font Quran (QPC Hafs), gunakan font lokal atau CDN */
+		@font-face {
+		  font-family: 'QPC Hafs';
+		  src: url('https://cdn.jsdelivr.net/gh/mustafa0x/qpc-fonts/QCF_P001.ttf') format('truetype');
+		}
+
+		/* === Reset & Base === */
+		*, *::before, *::after {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		body {
+		  background-color: #fdf8f0;
+		  color: #1a1a1a;
+		  font-size: 28px;
+		  line-height: 1.8;
+		}
+
+		/* === Container Utama === */
+		.ar {
+		  font-family: 'Amiri', 'Traditional Arabic', 'Arial', serif;
+		  direction: rtl;
+		  text-align: right;
+		  max-width: 860px;
+		  margin: 40px auto;
+		  padding: 40px 50px;
+		  background-color: #fffdf7;
+		  border: 1px solid #e0d5c0;
+		  border-radius: 8px;
+		  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+		}
+
+		/* === Paragraf === */
+		.ar p {
+		  font-size: 1.2rem;
+		  line-height: 2.2;
+		  margin-bottom: 1.4em;
+		  text-indent: 2em;
+		  color: #2c2c2c;
+		}
+
+		/* === Teks Al-Qur'an (QPC Hafs) === */
+		.ar .qpc-hafs {
+		  font-family: 'QPC Hafs', 'me_quran', 'KFGQPC Uthmanic Script HAFS', serif;
+		  font-size: 1.5rem;
+		  line-height: 2.8;
+		  color: #1a4a1a;
+		  background-color: #f0f7f0;
+		  border-right: 3px solid #4a7c59;
+		  padding: 2px 10px 2px 6px;
+		  border-radius: 4px;
+		  display: inline;
+		  letter-spacing: 0.02em;
+		}
+
+		/* === Heading / Judul Bab === */
+		.ar p:first-of-type {
+		  text-align: center;
+		  text-indent: 0;
+		  font-size: 1.5rem;
+		  font-weight: 700;
+		  color: #3d2b1f;
+		  border-bottom: 2px solid #c9a96e;
+		  padding-bottom: 12px;
+		  margin-bottom: 1.8em;
+		}
+
+		/* === Bismillah === */
+		.ar p:first-of-type + p {
+		  text-align: center;
+		  text-indent: 0;
+		  font-size: 1.6rem;
+		  font-weight: 700;
+		  color: #2c4a2c;
+		  letter-spacing: 0.05em;
+		}
+
+		/* === Hadith / Kutipan === */
+		.ar p strong,
+		.ar p b {
+		  color: #5c3d1e;
+		  font-weight: 700;
+		}
+
+		/* === Referensi Footnote (dalam kurung kotak) === */
+		.ar sup,
+		.ar sub {
+		  font-size: 0.7rem;
+		  color: #888;
+		  vertical-align: super;
+		}
+
+		/* === Baris Syair / Puisi === */
+		.ar p:has(br) {
+		  text-align: center;
+		  text-indent: 0;
+		  font-style: italic;
+		  color: #4a3728;
+		  background-color: #faf3e8;
+		  border-right: 4px solid #c9a96e;
+		  padding: 10px 20px;
+		  border-radius: 4px;
+		  margin: 1.2em 0;
+		}
+
+		/* === Scrollbar === */
+		::-webkit-scrollbar {
+		  width: 8px;
+		}
+		::-webkit-scrollbar-track {
+		  background: #f1ece2;
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #c9a96e;
+		  border-radius: 4px;
+		}
+
+		/* === Responsive === */
+		@media (max-width: 768px) {
+		  .ar {
+			padding: 24px 20px;
+			margin: 16px;
+			font-size: 16px;
+		  }
+
+		  .ar p {
+			font-size: 3.1rem;
+			line-height: 2.1;
+		  }
+
+		  .ar .qpc-hafs {
+			font-size: 1.3rem;
+		  }
+		}
+
+		@media print {
+		  .ar {
+			box-shadow: none;
+			border: none;
+			max-width: 100%;
+		  }
+		}
+    </style>
+</head>
+<body>

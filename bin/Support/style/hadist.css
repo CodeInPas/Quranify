@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kisah Imam Syafi'i</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+		.judul-arab {
+            /* Font & Ukuran */
+            font-family: 'Google Sans', serif;
+            font-size: 20px;
+            
+            /* Tata Letak */
+            direction: rtl; /* Memastikan teks mengalir dari kanan ke kiri */
+            line-height: 2.0; /* Memberi ruang antar baris agar nyaman dibaca */
+            text-align: center; /* Meratakan teks kiri-kanan */
+            
+            /* Dekorasi Wadah (Optional) */
+            max-width: 90%;
+			width:90%;
+            margin: 10px auto;
+            padding: 20px;
+
+            background-color: none;
+        }
+        .teks-arab {
+            /* Font & Ukuran */
+            font-family: 'Amiri', serif;
+            font-size: 20px;
+            
+            /* Tata Letak */
+            direction: rtl; /* Memastikan teks mengalir dari kanan ke kiri */
+            line-height: 2.0; /* Memberi ruang antar baris agar nyaman dibaca */
+            text-align: center; /* Meratakan teks kiri-kanan */
+            
+            /* Dekorasi Wadah (Optional) */
+            max-width: 90%;
+			width:90%;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+		.teks-sanad {
+            /* Font & Ukuran */
+            font-family: 'Amiri', serif;
+            font-size: 18px;
+            
+            /* Tata Letak */
+            direction: rtl; /* Memastikan teks mengalir dari kanan ke kiri */
+            line-height: 2.0; /* Memberi ruang antar baris agar nyaman dibaca */
+            text-align: right; /* Meratakan teks kiri-kanan */
+            
+            /* Dekorasi Wadah (Optional) */
+            max-width: 90%;
+			width:90%;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #F7FCFA;
+        }
+		 .teks-terjemahan {
+            /* Font & Ukuran */
+            font-family: 'Google Sans', serif;
+            font-size: 18px;
+            direction: ltr;
+            /* Tata Letak */
+            line-height: 2.0;  
+            text-align: justify;  
+            
+            /* Dekorasi Wadah (Optional) */
+            max-width: 90%;
+			width:90%;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #F0F7F7;
+        }
+    </style>
+</head>
+<body>
